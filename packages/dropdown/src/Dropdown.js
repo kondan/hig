@@ -95,8 +95,7 @@ export default class Dropdown extends Component {
      */
     formatOption(option) {
       return option ? String(option) : "";
-    },
-    variant: "box"
+    }
   };
 
   getBehaviorProps() {
@@ -157,7 +156,14 @@ export default class Dropdown extends Component {
    */
   renderInput(downshift) {
     const { id, toggleMenu, getInputProps } = downshift;
-    const { placeholder, disabled, required, onBlur, onFocus, variant } = this.props;
+    const {
+      placeholder,
+      disabled,
+      required,
+      onBlur,
+      onFocus,
+      variant
+    } = this.props;
 
     const inputProps = getInputProps({
       id,
